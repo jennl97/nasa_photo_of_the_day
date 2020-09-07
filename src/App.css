@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.titleDiv{
+  padding: 15px 0;
+}
+
+.explanationP{
+  width: 70%;
+  margin-left: 15%;
+  
+}
+
+.img{
+  width: 70%;
+}
