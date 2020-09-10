@@ -12,6 +12,7 @@ html{
   background: black;
   box-sizing: border-box;
   font-family: "Titillium Web", "Arial", sans-serif;
+  color: white;
 }
 
 #header{
@@ -43,6 +44,7 @@ html{
 .explanationP{
   width: 70%;
   margin-left: 15%;
+  color: white;
   
 }
 
