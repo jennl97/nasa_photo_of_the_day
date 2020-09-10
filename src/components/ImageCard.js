@@ -29,8 +29,8 @@ function ImageCard(props){
     return(
         <div>
             <Button onClick={display} className="apod_btn">GET PICTURE</Button>
-            {show && <> <div className="titleDiv"><h1>{props.data2.title}</h1></div>
-            <img className="img" src={props.data2.url} alt="NASA Astronomy"></img><p className="explanationP">{props.data2.explanation}</p></>}
+            {show && <> <div className="titleDiv"><img className="img" src={props.data2.url} alt="NASA Astronomy"></img><h1 className="title_h1">{props.data2.title}</h1></div>
+            <p className="explanationP">{props.data2.explanation}</p></>}
         </div>
     )
 }
