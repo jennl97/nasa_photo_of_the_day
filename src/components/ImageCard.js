@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
 import styled from 'styled-components';
 
 //styled component 
@@ -7,10 +7,14 @@ let Button = styled.button`
   border-radius: 3px;
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;
-  width: 11rem;
-  background: blue;
+  width: 100%;
+  background: #15418c;
   color: white;
-  font-size: 24px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Titillium Web", "Arial", sans-serif;
+  border: none;
+
   
 
 `;
@@ -24,9 +28,9 @@ function ImageCard(props){
 
     return(
         <div>
-            <Button onClick={display}>Click Here</Button>
+            <Button onClick={display} className="apod_btn">GET PICTURE</Button>
             {show && <> <div className="titleDiv"><h1>{props.data2.title}</h1></div>
-            <img className="img" src={props.data2.url}></img><p className="explanationP">{props.data2.explanation}</p></>}
+            <img className="img" src={props.data2.url} alt="NASA Astronomy"></img><p className="explanationP">{props.data2.explanation}</p></>}
         </div>
     )
 }
